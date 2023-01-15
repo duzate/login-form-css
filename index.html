@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Login Form Css</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-container">
+      <header>
+        <img src="assets/images/logo.svg" alt="logo">
+      </header>
+      <div class="form-container">
+        <div class="form">
+          <div class="content">
+            <div class="header-container">
+              <header>
+                <img src="assets/images/log-in.svg">
+                <h1>Faça seu login</h1>
+              </header>
+              <span>Entre com suas informações de cadastro.</span>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <div class="input-container">
+                <img src="assets/images/mail.svg" id="mail">
+                <input type="email" name="email" placeholder="Digite seu e-mail"
+                  onfocus="imageToggle('mail', 'assets/images/mail-focus.svg')"
+                  onblur="imageToggle('mail', 'assets/images/mail.svg')">
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Senha</label>
+              <div class="input-container">
+                <img src="assets/images/lock.svg" id="lock">
+                <input type="password" name="password" id="pwrd" placeholder="Digite sua senha"
+                  onfocus="imageToggle('lock', 'assets/images/lock-focus.svg')"
+                  onblur="imageToggle('lock', 'assets/images/lock.svg')">
+                <img src="assets/images/eye.svg" onclick="passVisibled()">
+              </div>
+            </div>
+            <footer>
+              <label class="check-container">
+                <input type="checkbox">
+                <span><img src="assets/images/check.svg"></span> Lembre-me </label>
+              <a href=""><span>Esqueci minha senha</span></a>
+            </footer>
+            <button class="enter">Entrar</button>
+            <span>Não tem uma conta?<a href="">Registra-se</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-container">
+      <img src="assets/images/side-image-2x.jpg" alt="side">
+    </div>
+  </div>
+  <script src="form.js"></script>
+</body>
+
+</html>
